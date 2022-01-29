@@ -13,5 +13,7 @@ spec:
           image: alpine:latest
           command:
             - env
+            - sleep
+            - "300"
       restartPolicy: Never
   backoffLimit: 0
