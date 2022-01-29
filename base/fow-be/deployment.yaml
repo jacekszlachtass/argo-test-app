@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: fow-be
+  name: fow-be
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: fow-be
+  template:
+    metadata:
+      labels:
+        app: fow-be
+    spec:
+      containers:
+        - name: fow-be
+          ports:
+            - containerPort: 80
+          image: fow-be:1234

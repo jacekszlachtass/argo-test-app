@@ -1,0 +1,16 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+- ../../base
+
+commonLabels:
+  env: dev
+
+images:
+- name: fow-backend-for-frontend
+  newName: europe-west2-docker.pkg.dev/fow-dev-1234/docker/fow-backend-for-frontend
+  newTag: 3e7fac648cb8e4c1f5eeb2a1dc294dbc9471fb64
+- name: fow-be
+  newName: europe-west2-docker.pkg.dev/fow-dev-1234/docker/fow-be
+  newTag: 1c5853be0709507e2be84d25e028ede9e7fa3021
