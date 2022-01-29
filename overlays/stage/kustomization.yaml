@@ -2,7 +2,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-- ../../base
+- github.com/jacekszlachtass/argo-test-app/base?ref=v0.0.1
 
 commonLabels:
   env: stage
