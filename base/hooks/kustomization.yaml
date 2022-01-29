@@ -3,3 +3,8 @@ kind: Kustomization
 
 resources:
   - post-sync-job.yaml
+
+configMapGenerator:
+  - name: argo-build-env
+    envs:
+      - build.properties

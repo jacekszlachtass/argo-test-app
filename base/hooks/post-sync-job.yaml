@@ -15,5 +15,32 @@ spec:
             - env
             - sleep
             - "300"
+          env:
+            - name: ARGOCD_APP_NAMESPACE
+              valueFrom:
+                configMapKeyRef:
+                  name: argo-build-env
+                  key: ARGOCD_APP_NAMESPACE
+            - name: ARGOCD_APP_REVISION
+              valueFrom:
+                configMapKeyRef:
+                  name: argo-build-env
+                  key: ARGOCD_APP_REVISION
+            - name: ARGOCD_APP_SOURCE_PATH
+              valueFrom:
+                configMapKeyRef:
+                  name: argo-build-env
+                  key: ARGOCD_APP_SOURCE_PATH
+            - name: ARGOCD_APP_SOURCE_REPO_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: argo-build-env
+                  key: ARGOCD_APP_SOURCE_REPO_URL
+            - name: ARGOCD_APP_SOURCE_TARGET_REVISION
+              valueFrom:
+                configMapKeyRef:
+                  name: argo-build-env
+                  key: ARGOCD_APP_SOURCE_TARGET_REVISION
       restartPolicy: Never
   backoffLimit: 0
+
