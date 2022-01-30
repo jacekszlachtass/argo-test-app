@@ -10,7 +10,7 @@ commonLabels:
 images:
 - name: fow-backend-for-frontend
   newName: europe-west2-docker.pkg.dev/fow-dev-1234/docker/fow-test-image
-  newTag: 0bce69847ffde26481a9a1b420bff3820b5b9c32
+  newTag: db03bf0575a45c005ca276e714ee6a273fd9f233
 - name: fow-be
   newName: europe-west2-docker.pkg.dev/fow-dev-1234/docker/fow-test-image
-  newTag: 0bce69847ffde26481a9a1b420bff3820b5b9c32
+  newTag: db03bf0575a45c005ca276e714ee6a273fd9f233
