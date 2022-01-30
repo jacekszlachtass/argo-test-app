@@ -4,7 +4,7 @@ metadata:
   name: jacek-argo-test-dev
   namespace: argocd
   annotations:
-    notifications.argoproj.io/subscribe.on-sync-succeeded.gmail: "jacek.szlachta@sullivanstanleyassociates.com"
+#    notifications.argoproj.io/subscribe.on-sync-succeeded.gmail: "jacek.szlachta@sullivanstanleyassociates.com"
     notifications.argoproj.io/subscribe.on-sync-succeeded.github: ""
 spec:
   project: default
