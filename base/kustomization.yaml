@@ -5,4 +5,3 @@ resources:
   - fow-backend-for-frontend
   - fow-be
   - guestbook
-  - hooks
